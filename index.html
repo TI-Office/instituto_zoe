@@ -1,217 +1,239 @@
 <!DOCTYPE html>
-<html>
-<meta charset="utf-8">
-<html lang="pt">
-  <head><title>Pré-Militar - Instituto ZOE</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-  </head>
-    </head>
-<style type="text/css">
-
-
-body{
-
-  line-height: 1.5;
-  background:#ffffff;
-  color: black;
-}
-.título_paragrafo {
-    color: #3400ad;
-    font-weight: 700;
-    position: relative;
-    background-color: #ffffff;
-    display: inline;
-    z-index: 3;
-    padding: 2px;
-  }
-
-.subtítulo_paragrafo {
-    color: #3400ad;
-    font-weight: normal;
-    font-size: 29px;
-    display: inline;
-    padding: 2px;
-  }
-
-  .subtítulo_h3 {
-    color: #3400ad;
-    font-weight: normal;
-    font-size: 20px;
-    display: inline;
-    padding: 2px;
-  }
-
-  p {
-    margin-top: 0;
-    margin-bottom: 1rem;
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding: 2px;
-}
-.principal{
-  width: 1140px;
-  background-color: #ffffff;
-  margin: 0 auto;
-}
-
-.topo{
-  width: 1360px;
-margin: 0 auto;
-display: flex;
-flex-flow: row wrap;
-
-}
-
-.linha{
-display: flex;
-flex-flow: row wrap;
-}
-
-.linha_fundo{
-background-color: #f5f5f5;
-}
-.coluna-50 {
-    width: 50%;
-}
-.coluna-50-2 {
-    width: 50%;
-}
-
-.rodapé{
-  width: 100%;
-  margin: 0 auto;
-  background-color: #c5cf25;
-  padding: 10px;
-}
-
-
+<html lang="en">
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
 </style>
-
+</head>
 <body>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary" class="navbar bg-dark" data-bs-theme="dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Instituto Zoe</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarScroll">
-        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Início</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Pré-Militar</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Profissionalizante</a>
-          </li>
-                  </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">INÍCIO</a>
+    <a href="#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PREPARATÓRIO</a>
+    <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PROFISSIONALIZANTE</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTATO</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="#" class="w3-bar-item w3-button">Merchandise</a>
+        <a href="#" class="w3-bar-item w3-button">Extras</a>
+        <a href="#" class="w3-bar-item w3-button">Media</a>
+      </div>
+    </div>
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PREPARATÓRIO</a>
+  <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PROFISSIONALIZANTE</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTATO</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MERCH</a>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+  <!-- Automatic Slideshow Images -->
+  <div class="mySlides w3-display-container w3-center">
+    <img src="img1.png" width="1200" height="600" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Los Angeles</h3>
+      <p><b>We had the best time playing at Venice Beach!</b></p>   
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="img2.png" width="1200" height="600" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>New York</h3>
+      <p><b>The atmosphere in New York is lorem ipsum.</b></p>    
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="img3.jpg" width="1200" height="600" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Chicago</h3>
+      <p><b>Thank you, Chicago - A night we won't forget.</b></p>    
+    </div>
+  </div>
+
+  <!-- The Band Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+    <h2 class="w3-wide">THE BAND</h2>
+    <p class="w3-opacity"><i>We love music</i></p>
+    <p class="w3-justify">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+      ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+      adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-third">
+        <p>Name</p>
+        <img src="/w3images/bandmember.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+      </div>
+      <div class="w3-third">
+        <p>Name</p>
+        <img src="/w3images/bandmember.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+      </div>
+      <div class="w3-third">
+        <p>Name</p>
+        <img src="/w3images/bandmember.jpg" class="w3-round" alt="Random Name" style="width:60%">
+      </div>
+    </div>
+  </div>
+
+  <!-- The Tour Section -->
+  <div class="w3-black" id="tour">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+      <h2 class="w3-wide w3-center">TOUR DATES</h2>
+      <p class="w3-opacity w3-center"><i>Remember to book your tickets!</i></p><br>
+
+      <ul class="w3-ul w3-border w3-white w3-text-grey">
+        <li class="w3-padding">September <span class="w3-tag w3-red w3-margin-left">Sold out</span></li>
+        <li class="w3-padding">October <span class="w3-tag w3-red w3-margin-left">Sold out</span></li>
+        <li class="w3-padding">November <span class="w3-badge w3-right w3-margin-right">3</span></li>
+      </ul>
+
+      <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+        <div class="w3-third w3-margin-bottom">
+          <img src="img1.jpg" alt="New York" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>New York</b></p>
+            <p class="w3-opacity">Fri 27 Nov 2016</p>
+            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <img src="img2.jpg" alt="Paris" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>Paris</b></p>
+            <p class="w3-opacity">Sat 28 Nov 2016</p>
+            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <img src="img3.jpg" alt="San Francisco" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>San Francisco</b></p>
+            <p class="w3-opacity">Sun 29 Nov 2016</p>
+            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Ticket Modal -->
+  <div id="ticketModal" class="w3-modal">
+    <div class="w3-modal-content w3-animate-top w3-card-4">
+      <header class="w3-container w3-teal w3-center w3-padding-32"> 
+        <span onclick="document.getElementById('ticketModal').style.display='none'" 
+       class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
+        <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Tickets</h2>
+      </header>
+      <div class="w3-container">
+        <p><label><i class="fa fa-shopping-cart"></i> Tickets, $15 per person</label></p>
+        <input class="w3-input w3-border" type="text" placeholder="How many?">
+        <p><label><i class="fa fa-user"></i> Send To</label></p>
+        <input class="w3-input w3-border" type="text" placeholder="Enter email">
+        <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right">PAY <i class="fa fa-check"></i></button>
+        <button class="w3-button w3-red w3-section" onclick="document.getElementById('ticketModal').style.display='none'">Close <i class="fa fa-remove"></i></button>
+        <p class="w3-right">Need <a href="#" class="w3-text-blue">help?</a></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- The Contact Section -->
+  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+    <h2 class="w3-wide w3-center">CONTACT</h2>
+    <p class="w3-opacity w3-center"><i>Fan? Drop a note!</i></p>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-col m6 w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker" style="width:30px"></i> Chicago, US<br>
+        <i class="fa fa-phone" style="width:30px"></i> Phone: +00 151515<br>
+        <i class="fa fa-envelope" style="width:30px"> </i> Email: mail@mail.com<br>
+      </div>
+      <div class="w3-col m6">
+        <form action="/action_page.php" target="_blank">
+          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+            </div>
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+            </div>
+          </div>
+          <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+          <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
         </form>
       </div>
     </div>
-  </nav>
-  <div class="topo">
-    <img src="capa.png" class="img-fluid" alt="...">
-  
-</div>
-<br>
-
-<div class="principal">
-<h1 class= "título_paragrafo">Pré-Militar</h1>
-<br>
-<br>
-
-<a href="form.html"><img width="1140" height="90" src="Banner_ebook_Elite-3.png"></a>
-<br>
-
-<div class="linha">
-  <div class="coluna-50"><h2 class="subtítulo_paragrafo">O melhor Preparatório Militar do Rio de Janeiro no Instituto ZOE</h2>
-    <p>Conquistar o sonho grande da aprovação nos concursos militares mais concorridos do país requer base, disciplina e foco nos estudos, mas apenas o melhor Preparatório Militar dispõe dessas características.</p>
-
-    <p><b> ESPAÇO RESERVADO PARA TESTES DE PROGRAMAÇÃO</b></p>
-    
-    <i class="bi bi-instagram"></i>
-    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
-      <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
-    </svg>
-
-
-  <p>No Instituto ZOE, é possível encontrar o melhor preparatório militar do Brasil. Sabe porquê? Os alunos encontram ensino diferenciado nas turmas, que são focadas em provas que exigem alto nível de conhecimento dos candidatos. A principal meta do preparatório militar do Instituto ZOE é consolidar e aprofundar o aprendizado, além de desenvolver, nos estudantes, as competências necessárias para enfrentar os concursos. </p> </div>
-
-  <div class="coluna-50"><img width="510" height="339" src="Imagem-2-Como-funciona-o-cursinho-para-concurso-militar.jpg">
   </div>
-
-  <div class="linha_fundo">
-  <div class="linha">
-
-  <div class="coluna-50"><img width="510" height="339" src="Imagem-2-Como-funciona-o-cursinho-para-concurso-militar.jpg">
-    <br>
-  </div>
-    
-  <div class="coluna-50">
-    <h2 class="subtítulo_paragrafo">Como funciona o Cursinho para Concurso Militar</h2>
-<p>As turmas do cursinho para concurso militar do Elite são voltadas especificamente para o ITA, IME, AFA, EsPCEx, Escola Naval, EFOMM, EPCAr ou Colégio Naval. Há um aprofundamento nas matérias de exatas, já que Química, Física e Matemática precisam estar afiadas para possibilitar o ingresso nessas instituições.</p>
-
-<p>O preparatório militar conta com material didático próprio atualizado, focado nas necessidades do aluno. As apostilas oferecidas a todas às turmas contam com exercícios separados em níveis de dificuldades e gabaritos. Além disso, no cursinho para concurso militar do Elite, o aluno recebe a resolução dos vestibulares militares anteriores referente ao concurso que deseja ingressar e são aplicados simulados periodicamente como forma de desenvolvê-los melhor. </p>
-</div>
-</div>
-<div class="principal">
-<br>
-<h2 class="subtítulo_paragrafo">Esteja pronto para todos os Vestibulares Militares</h2>
-<p>Um dos pontos aliados à preparação dos candidatos de vestibulares militares é conhecer bem o concurso, manter a organização e a disciplina nos estudos. </p>
-
-<h3 class="subtítulo_h3">Concurso ITA</h3>
-<p>O Instituto Tecnológico de Aeronáutica (ITA) é uma instituição de Ensino Superior pública da Força Aérea Brasileira, vinculada ao Departamento de Ciência e Tecnologia Aeroespacial, localizado em São José dos Campos, São Paulo. São oferecidas as especialidades de Engenharia Aeroespacial, Aeronáutica, Civil-Aeronáutica, de Computação, Eletrônica e Mecânica-Aeronáutica. A graduação em Engenharia pelo ITA tem duração de cinco anos. Embora não exista idade mínima para ingresso no concurso ITA, desde que o candidato tenha concluído ou esteja concluindo o Ensino Médio no ano da inscrição, há idade máxima para entrada na instituição: 23 anos de idade, completados até o dia 31 de dezembro do ano do concurso.</p>
-<h3 class="subtítulo_h3">Concurso IME</h3>
-<p>Localizado no Rio de Janeiro, o Instituto Militar de Engenharia (IME) é um centro de excelência e referência em Engenharia do Exército Brasileiro, que oferece cursos de graduação e pós-graduação no segmento. Para se inscrever no concurso IME, é necessário ser brasileiro(a) nato(a), ter concluído ou estar cursando a última série do Ensino Médio, além de ter entre 16 e 22 anos de idade, completados até 31 de dezembro do ano da matrícula (21 para a reserva). Os cursos de graduação na instituição se dividem em dois tipos:  o Curso de Formação e Graduação de Oficiais da Ativa e o Curso de Formação e Graduação de Oficiais da Reserva de Segunda Classe. Alunos de ambos os cursos devem escolher entre as especialidades oferecidas, que atualmente são: Fortificação e Construção (Engenharia Civil), Elétrica, Eletrônica, Comunicações, Mecânica e de Armamento, Mecânica e de Automóveis, Materiais, Química, Cartografia e Computação.</p>
-<h3 class="subtítulo_h3">Concurso EsPCEx</h3>
-<p>A Escola Preparatória de Cadetes do Exército (EsPCEx), localizada em Campinas, São Paulo, seleciona e prepara os candidatos para ingressar no Curso de Formação de Oficiais das Armas. O concurso EsPCEx direciona mulheres às carreiras de Intendência e Material Bélico e homens para cursos de Cavalaria, Infantaria, Artilharia, Engenharia e Comunicações e Intendência e Material Bélico. O concurso EsPCEx permite que os aprovados se tornem futuros cadetes da Academia Militar das Agulhas Negras (AMAN). A instituição dá o primeiro passo na formação de oficiais combatentes do Exército. Para se inscrever, é necessário ser brasileiro(a) nato(a) e possuir idade mínima de 17 e máxima de 22 anos, completados até 31 de dezembro do ano da matrícula. Também é necessário ter concluído ou estar cursando, no ano da inscrição, o 3º ano do Ensino Médio.</p>
-<h3 class="subtítulo_h3">Concurso Escola Naval</h3>
-<p>A Escola Naval é a instituição de Ensino Superior da Marinha do Brasil, que fica no Rio de Janeiro, com o objetivo de formar oficiais para os postos iniciais das carreiras dos Corpos da Armada (CA), Fuzileiros Navais (CFN) e Intendentes da Marinha (CIM). O concurso Escola Naval é dividido em duas fases: na primeira, o candidato faz 20 questões de Matemática e 20 de Inglês, na segunda, 20 questões de Português, 20 de Física e uma Redação. Após aprovado, haverá Inspeção de Saúde, Teste de Aptidão Física (corrida e natação), avaliação psicológica, entre outras etapas. A idade mínima permitida para ingressar na Escola Naval é de 18 anos completos e a máxima é de menos de 23 anos no dia 1º de janeiro do ano do Curso. Além disso, é necessário ter concluído o Ensino Médio ou estar em fase de conclusão do mesmo.</p>
-
-<h3 class="subtítulo_h3">Concurso EFOMM</h3>
-<p>Na Escola de Formação de Oficiais da Marinha Mercante (EFOMM), o aluno se forma como Oficial de Náutica ou de Máquinas. São três anos de curso, em regime interno, e, ao término das atividades acadêmicas, é obrigatório um ano de estágio embarcado. Para realizar o concurso EFOMM, é necessário ter entre 17 e 23 anos e ter concluído o Ensino Médio até o ato da matrícula. O exame testa os conhecimentos de Português, Redação, Inglês, Matemática e Física dos candidatos, todas as questões com caráter eliminatório e classificatório. Os classificados na etapa de conhecimento são selecionados para a Inspeção de Saúde e os aprovados nesta prosseguem para o Exame de Suficiência Física, que testa a preparação física por meio de corrida e natação.</p>
-<h3 class="subtítulo_h3">Concurso EPCAr</h3>
-<p>A Escola Preparatória de Cadetes do Ar (EPCAr) , sediada em Barbacena, Minas Gerais, tem como público-alvo alunos e alunas de 14 a 19 anos e sua missão é moldar os jovens para ingresso no Curso de Formação de Oficiais Aviadores da Academia da Força Aérea (AFA), por meio do Curso Preparatório de Cadetes do Ar. Simultaneamente, proporciona aos alunos a formação no Ensino Médio, por isso é necessário que o candidato(a) tenha completado o Ensino Fundamental até o ato da matrícula.</p>
-
-<h3 class="subtítulo_h3">Concurso Colégio Naval</h3>
-<p>O Colégio Naval (CN) é uma instituição de Ensino Médio da Marinha do Brasil, sediada em Angra dos Reis, no Rio de Janeiro. A proposta é preparar os alunos para ingressarem na Escola Naval (EN), instituição de Ensino Superior onde são formados oficiais da Marinha. Por conta disso, o curso no Colégio, que busca estimular o gosto pelo mar, é conhecido como Curso de Preparação de Aspirantes. Para se candidatar ao concurso Colégio Naval, é necessário ter 15 anos completos e menos de 18 anos, completos até 1º de janeiro do ano do Curso, e ser do sexo masculino. Por servir também como Ensino Médio, um dos pré-requisitos é ter concluído o 9º ano do Ensino Fundamental até o ato da matrícula.</p>
-
-<br>
   
-</div>
-<div class="linha_fundo">
-  <div class="linha">
-
-  <div class="coluna-50"><img width="510" height="339" src="Imagem-6-Faça-do-Elite-seu-Curso-Preparatório-Militar.jpg">
-  </div>
-    
-  <div class="coluna-50">
-    <h2 class="subtítulo_paragrafo">Como funciona o Cursinho para Concurso Militar</h2>
-<p>As turmas do cursinho para concurso militar do Elite são voltadas especificamente para o ITA, IME, AFA, EsPCEx, Escola Naval, EFOMM, EPCAr ou Colégio Naval. Há um aprofundamento nas matérias de exatas, já que Química, Física e Matemática precisam estar afiadas para possibilitar o ingresso nessas instituições.</p>
-
-<p>O preparatório militar conta com material didático próprio atualizado, focado nas necessidades do aluno. As apostilas oferecidas a todas às turmas contam com exercícios separados em níveis de dificuldades e gabaritos. Além disso, no cursinho para concurso militar do Elite, o aluno recebe a resolução dos vestibulares militares anteriores referente ao concurso que deseja ingressar e são aplicados simulados periodicamente como forma de desenvolvê-los melhor. </p>
-</div>
-</div>
-</div>
-</div></div>
-</div>
- </body>
-    <hr>
-
-<div class="rodapé">
-  
-<h2>CENTRAL DE ATENDIMENTO</h2>
-<p>0800 031 0306</p>
-
-<p><b>FALE CONOSCO:</b> reclamações ou sugestões gerais sobre a unidade
-faleconosco@ensinoelite.com.br</p>
+<!-- End Page Content -->
 </div>
 
-</html
+<!-- Image of location/map -->
+<img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%">
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
